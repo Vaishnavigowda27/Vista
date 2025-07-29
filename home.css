@@ -1,0 +1,200 @@
+/* General Reset */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5dc; /* Cream background */
+  color: #3e2723; /* Deep chocolate brown text */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header */
+header {
+  background: rgba(108, 28, 28, 0.916); /* Deep maroon background */
+  padding: 10px 0; /* Keep navbar height unchanged */
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Navbar Container */
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 70px; /* Keep navbar height same */
+  box-sizing: border-box;
+}
+
+/* Logo */
+.logo img {
+  height: 80px; /* Increased logo size */
+  width: auto;
+  filter: drop-shadow(0 0 5px rgba(205, 127, 50, 0.5)); /* Bronze glow effect */
+}
+
+/* Navbar Styling */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 20px; /* Adjust space between menu items */
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+/* Navbar Links */
+.navbar ul li a {
+  color: #d2b48c; /* Tan text */
+  text-decoration: none;
+  font-size: 14px; /* Slightly smaller font */
+  padding: 8px 12px; /* Reduced padding */
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+/* Hover Effect */
+.navbar ul li a:hover {
+  background-color: rgba(205, 127, 50, 0.1);
+  box-shadow: 0 0 10px rgba(205, 127, 50, 0.3);
+  color: #fff;
+}
+
+
+/* Home Section */
+.home-section {
+  background-color: #f5f5dc; /* Cream background */
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Content Container */
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Image Styling */
+.content-image {
+  height: 380px;
+  width: 420px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Text Container */
+.text-container {
+  max-width: 600px;
+  text-align: left;
+}
+
+.text-container h1 {
+  font-size: 30px;
+  color: #3e2723;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #3e2723;
+}
+
+/* Reviews Section */
+.reviews-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.reviews-section h2 {
+  color: #362813;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  width: 300px;
+  padding: 20px;
+  background-color: #fdf8f1;
+  border: 2px solid #ffa62b;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.review-card span {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px;
+  }
+
+  .logo img {
+    height: 50px; /* Smaller logo for mobile */
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar ul li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar ul li a {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+
+  /* Stack image and text on smaller screens */
+  .content-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content-image {
+    height: 320px;
+    width: 100%;
+  }
+
+  .text-container h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .text-container p {
+    font-size: 16px;
+  }
+}
+

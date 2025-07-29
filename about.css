@@ -1,0 +1,195 @@
+/* General Reset */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5dc; /* Cream background */
+  color: #3e2723; /* Deep chocolate brown text */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header */
+header {
+  background: rgba(108, 28, 28, 0.916); /* Deep maroon background */
+  padding: 10px 0; /* Keep navbar height unchanged */
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Navbar Container */
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 70px; /* Keep navbar height same */
+  box-sizing: border-box;
+}
+
+/* Logo */
+.logo img {
+  height: 80px; /* Increased logo size */
+  width: auto;
+  filter: drop-shadow(0 0 5px rgba(205, 127, 50, 0.5)); /* Bronze glow effect */
+}
+
+/* Navbar Styling */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 20px; /* Adjust space between menu items */
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+/* Navbar Links */
+.navbar ul li a {
+  color: #d2b48c; /* Tan text */
+  text-decoration: none;
+  font-size: 14px; /* Slightly smaller font */
+  padding: 8px 12px; /* Reduced padding */
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+/* Hover Effect */
+.navbar ul li a:hover {
+  background-color: rgba(205, 127, 50, 0.1);
+  box-shadow: 0 0 10px rgba(205, 127, 50, 0.3);
+  color: #fff;
+}
+
+
+/* Active Link */
+.navbar ul li a.active {
+  background-color: rgba(205, 127, 50, 0.2);
+  box-shadow: 0 0 15px rgba(205, 127, 50, 0.5);
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar ul li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar ul li a {
+    display: block;
+    padding: 10px;
+  }
+
+  .logo img {
+    height: 70px;
+  }
+}
+
+/* About Us Section */
+.mainabout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* Adds space between image and text */
+  margin-top: 20px; /* Reduced margin to move closer to navbar */
+  padding: 30px;
+}
+
+.photo img {
+  width: 500px; /* Fixed size for image */
+  height: auto;
+  border-radius: 10px; /* Soft edges */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* About Us Content */
+.aboutus {
+  max-width: 700px;
+  text-align: justify;
+  padding: 40px;
+}
+
+.aboutus h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.aboutus p {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  margin-top: 15px;
+}
+
+/* Our Work Section */
+.our-work {
+  text-align: center;
+}
+
+.our-work h2 {
+  color: #362813;
+  font-size: 2rem;
+  padding: 20px;
+}
+
+.work-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.work-item {
+  background: #f5f5dc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+.work-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.work-item h3 {
+  margin-top: 15px;
+  font-size: 1.4rem;
+  color: #3e2723;
+}
+
+.work-item p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Responsive Design for Our Work */
+@media (max-width: 768px) {
+  .work-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-item {
+    max-width: 100%;
+  }
+}
