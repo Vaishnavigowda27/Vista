@@ -39,9 +39,7 @@ The website is deployed using [Vercel](https://vercel.com) and is intended for p
 ⚙️ Tech Stack
 HTML5
 CSS3
-
 Vercel for deployment
-
 Font Awesome for icons
 
 📌 Notes
