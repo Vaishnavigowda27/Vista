@@ -1,108 +1,66 @@
+<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vista Architect</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="./about.css">
-  <link rel="stylesheet" href="./contact.css">
-  <link rel="stylesheet" href="./home.css">
-  <!-- <link rel="stylesheet" href="./work.css"> -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vista Architect - About</title>
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
+
 <body>
 
-<!-- Header start -->
+    <!-- Header -->
+    <header style="background-color: #800000; padding: 5px 20px;">
+        <div class="nav-header" style="display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: auto; height: 50px;">
+            <div class="logo">
+                <a href="index.html"><img src="/images/logo.png" alt="Logo" style="height: 110px;" /></a>
+            </div>
+            <nav>
+                <ul style="display: flex; gap: 20px; list-style: none;">
+                    <li><a href="index.html" style="color: gold;">HOME</a></li>
+                    <li><a href="about.html" style="color: gold;">ABOUT</a></li>
+                    <li><a href="services.html" style="color: gold;">SERVICES</a></li>
+                    <li><a href="contact.html" style="color: gold;">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<header style="background-color: #800000; padding: 5px 20px;">
-  <div class="nav-header" style="display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: auto; height: 50px;">
-      <div class="logo" style="flex-shrink: 0; display: flex; align-items: center;">
-          <a href="home.html">
-              <img src="/images/logo.png" alt="Logo" style="height: 110px; display: block;"> <!-- Even Bigger Logo -->
-          </a>
-      </div>
-      <div class="nav" style="flex-grow: 1; display: flex; justify-content: flex-end; align-items: center;">
-          <nav class="navbar">
-              <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px; align-items: center;">
-                  <li><a href="home.html" style="color: gold; text-decoration: none; font-size: 14px;">HOME</a></li>
-                  <li><a href="about.html" style="color: gold; text-decoration: none; font-size: 14px;">ABOUT</a></li>
-                  <li><a href="services.html" style="color: gold; text-decoration: none; font-size: 14px;">SERVICES</a></li>
-                  <li><a href="contact.html" style="color: gold; text-decoration: none; font-size: 14px;">CONTACT</a></li>
-              </ul>
-          </nav>
-      </div>
-  </div>
-</header>
+    <!-- About Content -->
+    <div class="about-content" style="display: flex; justify-content: center; align-items: center; padding: 40px;">
+        <div class="mainabout" style="display: flex; gap: 20px;">
+            <div class="photo">
+                <img src="images/img-21.png" alt="Architecture" height="250" width="250" style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" />
+            </div>
+            <div class="aboutus">
+                <h2>About Us</h2>
+                <p>
+                    At Vista Architecture & Interiors, we create spaces that blend aesthetics, functionality, and sustainability...
+                </p>
+            </div>
+        </div>
+    </div>
 
-
-
-
-
- <!-- About Us Section -->
- <div class="about-content" style="display: flex; justify-content: center; align-items: center;">
-  <div class="mainabout" style="display: flex; gap: 20px; align-items: center;">
-      <div class="photo">
-        <img src="images/img-21.png" alt="Modern Architecture Design" class="architecture-image" height="250px" width="250px" 
-        style="transition: transform 0.3s ease; cursor: pointer;"
-        onmouseover="this.style.transform='scale(1.1)'" 
-        onmouseout="this.style.transform='scale(1)'">
-      </div>
-      <div class="aboutus">
-          <h2>About Us</h2>
-          <p>At Vista Architecture & Interiors, we create spaces that blend aesthetics, functionality, and sustainability. From luxurious homes to dynamic workspaces, our designs reflect our clients' unique aspirations, lifestyles, and needs. With a team of expert architects and designers, we push innovation while ensuring practicality, quality, comfort, and environmental responsibility, crafting spaces that inspire, endure, and enhance everyday living experiences with creativity, precision, and a deep understanding of architectural excellence, modern design trends, and sustainability.</p>
-      </div>
-  </div>
-</div>
-
-
-
-<!-- Our Work Section -->
-<section id="our-work" class="our-work">
-  <h2 style="color:#362813">Our Work</h2>
-  
-  <div class="work-container">
-    
-      <div class="work-item">
-        <img src="images/img-3.jpg" alt="Luxury Villa" class="work-image" height="200px" width="200px"
-        style="transition: transform 0.3s ease, box-shadow 0.3s ease;"
-        onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.2)';" 
-        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-        <h3>Modern Kitchen</h3>
-        <p>A sleek and functional kitchen design combining contemporary aesthetics with efficient space utilization.</p>
-      </div>
-    
-      <div class="work-item">
-        <img src="images/img-4.jpg" alt="Corporate Office" class="work-image" height="200px" width="200px"
-        style="transition: transform 0.3s ease, box-shadow 0.3s ease;"
-        onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.2)';" 
-        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-        <h3>Spacious Living Area</h3>
-          <p>An open and airy living room concept with exquisite furnishings and natural lighting.</p>
-      </div>
-    
-      <div class="work-item">
-        <img src="images/img-5.jpg" alt="Urban Development" class="work-image" height="200px" width="200px"
-        style="transition: transform 0.3s ease, box-shadow 0.3s ease;"
-        onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.2)';" 
-        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-        <h3>Luxury Living Space</h3>
-        <p>A high-end living area featuring premium materials, stylish décor, and a warm ambiance.</p>
-      </div>
-    
-      <div class="work-item">
-        <img src="images/img-6.jpg" alt="Commercial Mall" class="work-image" height="200px" width="200px"
-        style="transition: transform 0.3s ease, box-shadow 0.3s ease;"
-        onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.2)';" 
-        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-        <h3>Contemporary Lounge</h3>
-        <p>A sophisticated lounge area with a perfect blend of modern and cozy elements for an inviting atmosphere.</p>
-      </div>
-  
-  </div>
-</section>
-<br>
-
-</body>
-</html>
-
+    <!-- Our Work -->
+    <section class="our-work">
+        <h2 style="text-align: center; color: #362813;">Our Work</h2>
+        <div class="work-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+            <div class="work-item">
+                <img src="images/img-3.jpg" alt="Kitchen" height="200" width="200" style="transition: 0.3s;" onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)'" />
+                <h3>Modern Kitchen</h3>
+                <p>Contemporary kitchen blending form & function.</p>
+            </div>
+            <div class="work-item">
+                <img src="images/img-4.jpg" alt="Living Area" height="200" width="200" style="transition: 0.3s;" onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)'" />
+                <h3>Living Space</h3>
+                <p>Elegant, airy space with natural lighting.</p>
+            </div>
+            <div class="work-item">
+                <img src="images/img-5.jpg" alt="Luxury Space" height="200" width="200" style="transition: 0.3s;" onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)'" />
+                <h3>Luxury Living</h3>
+                <p>Premium décor and warmth combined.</p>

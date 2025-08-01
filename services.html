@@ -1,97 +1,60 @@
+<!-- services.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vista Architect</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="./about.css">
-  <link rel="stylesheet" href="./contact.css">
-  <link rel="stylesheet" href="./home.css">
-  <!-- <link rel="stylesheet" href="./work.css"> -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vista Architect - Services</title>
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
+
 <body>
 
-<!-- Header start -->
-
-<header style="background-color: #800000; padding: 5px 20px;">
-  <div class="nav-header" style="display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: auto; height: 50px;">
-      <div class="logo" style="flex-shrink: 0; display: flex; align-items: center;">
-          <a href="home.html">
-              <img src="/images/logo.png" alt="Logo" style="height: 110px; display: block;"> <!-- Even Bigger Logo -->
-          </a>
-      </div>
-      <div class="nav" style="flex-grow: 1; display: flex; justify-content: flex-end; align-items: center;">
-          <nav class="navbar">
-              <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px; align-items: center;">
-                  <li><a href="home.html" style="color: gold; text-decoration: none; font-size: 14px;">HOME</a></li>
-                  <li><a href="about.html" style="color: gold; text-decoration: none; font-size: 14px;">ABOUT</a></li>
-                  <li><a href="services.html" style="color: gold; text-decoration: none; font-size: 14px;">SERVICES</a></li>
-                  <li><a href="contact.html" style="color: gold; text-decoration: none; font-size: 14px;">CONTACT</a></li>
-              </ul>
-          </nav>
-      </div>
-  </div>
-</header>
-
-
-
-         
-
-  <!-- Blog Section -->
-  
-  <section class="sec" id="BLOG" style="padding: 20px; background-color: #f5f5dc;">
-    <div class="gallery-container" style="max-width: 100%; margin: auto;">
-        
-        <h3>1. Architecture</h3>
-        <div class="gallery-item" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15px;">
-            <img src="images/img-14.png" alt="" height="250px" width="32%" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;" 
-            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.2)';" 
-            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-
-            <img src="images/img-17.png" alt="" height="250px" width="32%" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;" 
-            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.2)';" 
-            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-
-            <img src="images/img-15.png" alt="" height="250px" width="32%" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;" 
-            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.2)';" 
-            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+    <!-- Header -->
+    <header style="background-color: #800000; padding: 5px 20px;">
+        <div class="nav-header" style="display: flex; justify-content: space-between; max-width: 1200px; margin: auto;">
+            <a href="index.html"><img src="/images/logo.png" alt="Logo" style="height: 110px;" /></a>
+            <nav>
+                <ul style="display: flex; gap: 20px; list-style: none;">
+                    <li><a href="index.html" style="color: gold;">HOME</a></li>
+                    <li><a href="about.html" style="color: gold;">ABOUT</a></li>
+                    <li><a href="services.html" style="color: gold;">SERVICES</a></li>
+                    <li><a href="contact.html" style="color: gold;">CONTACT</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <h3>2. Interior Designing</h3>
-        <div class="gallary-item" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15px;">
-            <img src="images/img-7.jpg" alt="" height="250px" width="32%" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;" 
-            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.2)';" 
-            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+    <!-- Services -->
+    <section style="padding: 40px; background-color: #f5f5dc;">
+        <div class="gallery-container" style="max-width: 1200px; margin: auto;">
+            <h3>1. Architecture</h3>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <img src="images/img-14.png" height="250" style="width: 32%; border-radius: 10px;" />
+                <img src="images/img-17.png" height="250" style="width: 32%; border-radius: 10px;" />
+                <img src="images/img-15.png" height="250" style="width: 32%; border-radius: 10px;" />
+            </div>
 
-            <img src="images/img-9.png" alt="" height="250px" width="32%" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;" 
-            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.2)';" 
-            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+            <h3>2. Interior Designing</h3>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <img src="images/img-7.jpg" height="250" style="width: 32%; border-radius: 10px;" />
+                <img src="images/img-9.png" height="250" style="width: 32%; border-radius: 10px;" />
+                <img src="images/img-10.png" height="250" style="width: 32%; border-radius: 10px;" />
+            </div>
 
-            <img src="images/img-10.png" alt="" height="250px" width="32%" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;" 
-            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.2)';" 
-            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+            <h3>3. And Much More</h3>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <img src="images/img-12.png" height="250" style="width: 32%; border-radius: 10px;" />
+                <img src="images/img-16.png" height="250" style="width: 32%; border-radius: 10px;" />
+                <img src="images/img-13.png" height="250" style="width: 32%; border-radius: 10px;" />
+            </div>
         </div>
-
-        <h3>3. And Much More</h3>
-        <div class="gallary-item" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15px;">
-            <img src="images/img-12.png" alt="" height="250px" width="32%" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;" 
-            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.2)';" 
-            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-
-            <img src="images/img-16.png" alt="" height="250px" width="32%" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;" 
-            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.2)';" 
-            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-
-            <img src="images/img-13.png" alt="" height="250px" width="32%" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;" 
-            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.2)';" 
-            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-        </div>
-    </div>
-</section>
-
-  
+    </section>
 
 </body>
-  </html>
+
+</html>

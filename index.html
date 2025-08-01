@@ -1,98 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vista Architect</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="./about.css">
-  <link rel="stylesheet" href="./contact.css">
-  <link rel="stylesheet" href="./home.css">
-  <!-- <link rel="stylesheet" href="./work.css"> -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vista Architect</title>
+
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
+
 <body>
 
-<!-- Header start -->
+    <!-- Header -->
+    <header style="background-color: #800000; padding: 5px 20px;">
+        <div class="nav-header" style="display: flex; justify-content: space-between; max-width: 1200px; margin: auto;">
+            <a href="index.html"><img src="/images/logo.png" alt="Logo" style="height: 110px;" /></a>
+            <nav>
+                <ul style="display: flex; gap: 20px; list-style: none;">
+                    <li><a href="index.html" style="color: gold;">HOME</a></li>
+                    <li><a href="about.html" style="color: gold;">ABOUT</a></li>
+                    <li><a href="services.html" style="color: gold;">SERVICES</a></li>
+                    <li><a href="contact.html" style="color: gold;">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<header style="background-color: #800000; padding: 5px 20px;">
-  <div class="nav-header" style="display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: auto; height: 50px;">
-      <div class="logo" style="flex-shrink: 0; display: flex; align-items: center;">
-          <a href="home.html">
-              <img src="/images/logo.png" alt="Logo" style="height: 110px; display: block;"> <!-- Even Bigger Logo -->
-          </a>
-      </div>
-      <div class="nav" style="flex-grow: 1; display: flex; justify-content: flex-end; align-items: center;">
-          <nav class="navbar">
-              <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px; align-items: center;">
-                  <li><a href="home.html" style="color: gold; text-decoration: none; font-size: 14px;">HOME</a></li>
-                  <li><a href="about.html" style="color: gold; text-decoration: none; font-size: 14px;">ABOUT</a></li>
-                  <li><a href="services.html" style="color: gold; text-decoration: none; font-size: 14px;">SERVICES</a></li>
-                  <li><a href="contact.html" style="color: gold; text-decoration: none; font-size: 14px;">CONTACT</a></li>
-              </ul>
-          </nav>
-      </div>
-  </div>
-</header>
+    <!-- Home Section -->
+    <section style="display: flex; justify-content: center; align-items: center; padding: 40px; background-color: #f5f5dc;">
+        <div style="max-width: 1200px; display: flex; align-items: center; gap: 20px;">
+            <img src="images/img-18.png" alt="Architecture Image" style="width: 400px; border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.2)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';" />
 
+            <div style="max-width: 600px;">
+                <h1 style="font-size: 28px; color: #333;">ARCHITECTURE AND INTERIORS</h1>
+                <p style="font-size: 16px; line-height: 1.6; color: #555;">
+                    Welcome to Vista architectural firm, where architectural brilliance meets innovative design. As a leading architectural firm, we specialize in crafting exceptional spaces that seamlessly blend functionality, aesthetics, and sustainability. With a dedicated
+                    team of highly skilled architects, engineers, and designers, we are committed to creating architectural marvels that inspire and transform the built environment.
+                </p>
+            </div>
+        </div>
+    </section>
 
-
-         
-
-<!-- Home Section -->
-<section class="home-section" style="display: flex; justify-content: center; align-items: center; padding: 40px; background-color: #f5f5dc;">
-  <div class="home-content" style="max-width: 1200px; display: flex; align-items: center; gap: 20px;">
-
-    <div class="content-container" style="display: flex; align-items: center; gap: 20px;">
-      
-      <img src="images/img-18.png" alt="Architecture Image" class="content-image" 
-      style="width: 400px; height: auto; border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;"
-      onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='5px 5px 15px rgba(0, 0, 0, 0.2)';" 
-      onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-      
-      <div class="text-container" style="max-width: 600px;">
-        <h1 style="font-size: 28px; color: #333; margin-bottom: 10px;">ARCHITECTURE AND INTERIORS</h1>
-        <p style="font-size: 16px; line-height: 1.6; color: #555;">
-          Welcome to Vista architectural firm, where architectural brilliance meets innovative design. 
-          As a leading architectural firm, we specialize in crafting exceptional spaces that seamlessly 
-          blend functionality, aesthetics, and sustainability. With a dedicated team of highly skilled 
-          architects, engineers, and designers, we are committed to creating architectural marvels that 
-          inspire and transform the built environment.
-        </p>
-      </div>
-      
-    </div>
-
-  </div>
-</section>
-
- 
-  
- <!-- Reviews Section -->
-<div class="reviews-section">
-  <h2>What Our Clients Say</h2>
-  <div class="reviews">
-      <div class="review-card">
-          <p>"The team transformed our vision into reality! The design was both innovative and functional. Highly recommend!"</p>
-          <span>- Aakash</span>
-      </div>
-      <div class="review-card">
-          <p>"Exceptional attention to detail and professionalism. Our home now feels modern yet timeless."</p>
-          <span>- Meera</span>
-      </div>
-      <div class="review-card">
-          <p>"Working with this firm was a seamless experience. The creativity and expertise they bring to each project is unparalleled."</p>
-          <span>- Jeevan</span>
-      </div>
-  </div>
-</div>
-
-
-
-
-
+    <!-- Reviews Section -->
+    <section class="reviews-section" style="padding: 40px; background-color: #fff3e0;">
+        <h2 style="text-align: center; color: #362813;">What Our Clients Say</h2>
+        <div class="reviews" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; max-width: 1000px; margin: auto; padding-top: 20px;">
+            <div class="review-card" style="background: white; padding: 20px; border-radius: 10px; width: 280px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <p>"The team transformed our vision into reality! The design was both innovative and functional. Highly recommend!"</p>
+                <span>- Aakash</span>
+            </div>
+            <div class="review-card" style="background: white; padding: 20px; border-radius: 10px; width: 280px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <p>"Exceptional attention to detail and professionalism. Our home now feels modern yet timeless."</p>
+                <span>- Meera</span>
+            </div>
+            <div class="review-card" style="background: white; padding: 20px; border-radius: 10px; width: 280px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <p>"Working with this firm was a seamless experience. The creativity and expertise they bring to each project is unparalleled."</p>
+                <span>- Jeevan</span>
+            </div>
+        </div>
+    </section>
 
 </body>
-</html> 
 
-
+</html>
